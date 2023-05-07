@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script src="assets/scripts/script.js" defer></script>
+    <title>Pokédex</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>Pokédex</h1>
+
+        <div class="search">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="search" id="search" placeholder="Pikachu" disabled>
+        </div>
+    </header>
+
+    <form class="type-selector">
+        <label for="none">Todos
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('none')" id="none" checked>
+        </label>
+
+        <label for="normal">Normal
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('normal')" id="normal">
+        </label>
+
+        <label for="fire">Fogo
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('fire')" id="fire">
+        </label>
+
+        <label for="water">Água
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('water')" id="water">
+        </label>
+
+        <label for="grass">Grama
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('grass')" id="grass">
+        </label>
+
+        <label for="flying">Voador
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('flying')" id="flying">
+        </label>
+
+        <label for="fighting">Lutador
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('fighting')" id="fighting">
+        </label>
+
+        <label for="poison">Veneno
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('poison')" id="poison">
+        </label>
+
+        <label for="electric">Elétrico
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('electric')" id="electric">
+        </label>
+
+        <label for="ground">Terra
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('ground')" id="ground">
+        </label>
+
+        <label for="rock">Pedra
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('rock')" id="rock">
+        </label>
+
+        <label for="psychic">Psíquico
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('psychic')" id="psychic">
+        </label>
+
+        <label for="ice">Gelo
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('ice')" id="ice">
+        </label>
+
+        <label for="bug">Inseto
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('bug')" id="bug">
+        </label>
+
+        <label for="ghost">Fantasma
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('ghost')" id="ghost">
+        </label>
+
+        <label for="steel">Ferro
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('steel')" id="steel">
+        </label>
+
+        <label for="dragon">Dragão
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('dragon')" id="dragon">
+        </label>
+        <!-- 
+        <label for="dark">Sombrio
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('dark')" id="dark">
+        </label>
+        -->
+        <label for="fairy">Fada
+            <input type="radio" name="pokemon-type" onchange="selectPokemonType('fairy')" id="fairy">
+        </label>
+    </form>
+
+    <div class="pokemons"></div>
+    <div class="modal"></div>
+
+    <div class="loading"><i class="fa-solid fa-spinner fa-spin"></i></div>
+
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+</body>
+</html>

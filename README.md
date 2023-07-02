@@ -2,7 +2,7 @@
 
 ![Imagem do projeto](./assets/images/demonstracao-do-projeto.gif)
 
-### [Visitar Projeto](#)
+### [Visitar Projeto](https://pokedex-blue-three-76.vercel.app/)
 
 ---
 

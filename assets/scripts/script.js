@@ -67,7 +67,9 @@ function getPokemonImages(pokeID, shiny) {
 function enableInput() {
     searchInput.removeAttribute('disabled')
     const loader = document.querySelector('.loader')
-    loader.style.opacity = 0
+    const spinner = document.querySelector('.search .fa-spin')
+    loader.style.display = 'none'
+    spinner.style.display = 'none'
 }
 
 // Formata os dados de todos os Pokémons

@@ -50,6 +50,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .search label {
@@ -92,6 +93,13 @@ h1 {
 .search input:disabled {
     text-decoration: line-through;
     color: rgba(128, 128, 128, 0.350);
+}
+
+.search .fa-spin {
+    position: absolute;
+    right: 10px;
+    color: rgba(128, 128, 128, 0.350);
+    font-size: 2rem;
 }
 
 
@@ -143,6 +151,7 @@ h1 {
     gap: 25px;
     max-width: 1200px;
     margin: auto;
+    padding-bottom: 25px;
 }
 
 
@@ -375,7 +384,7 @@ h1 {
     display: flex;
     justify-content: center;
     transition: opacity 0.3s ease-in;
-    margin-bottom: 15px;
+    margin: 20px 0px 15px 0px;
 }
 
 .circle {

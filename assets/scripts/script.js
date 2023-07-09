@@ -248,36 +248,6 @@ modal.addEventListener('click', element => {
 })
 
 // Evento que busca os pokémons na barra de pesquisa
-/* searchInput.addEventListener('input', busca)
-let counter
-function busca() {
-    const searchInputValue = searchInput.value.toLowerCase()
-    const identifiers = document.querySelectorAll('.identifiers')
-    const none = document.querySelector('#none')
-
-    none.checked = true
-    selectPokemonType()
-
-    if (searchInputValue != '') {
-        for (let h2 of identifiers) {
-            const h2Text = h2.textContent.toLowerCase()
-
-            if (h2Text.includes(searchInputValue)) {
-                const father = h2.closest('.pokemon-card')
-                father.style.display = 'flex'
-            } else {
-                const father = h2.closest('.pokemon-card')
-                father.style.display = 'none'
-            }
-        }
-    } else {
-        for (let h2 of identifiers) {
-            const father = h2.closest('.pokemon-card')
-            father.style.display = 'flex'
-        }
-    }
-} */
-
 searchInput.addEventListener('input', searchPokemon)
 let dlaySearch
 function searchPokemon() {
